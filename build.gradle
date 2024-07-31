@@ -1,0 +1,38 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // JUnit viene por defecto en el proyecto java
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+
+    //SELENIUM nos permite interactuar con los elementos web de una pagina
+    // https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java
+    implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.23.0'
+
+    //TESTNG es una libreria para hacer assertions, hacer validaciones
+    // https://mvnrepository.com/artifact/org.testng/testng
+    testImplementation group: 'org.testng', name: 'testng', version: '7.10.2'
+
+    //CUCUMBER
+    // https://mvnrepository.com/artifact/io.cucumber/cucumber-java
+    implementation group: 'io.cucumber', name: 'cucumber-java', version: '7.18.1'
+
+    //CUCUMBER
+    // https://mvnrepository.com/artifact/io.cucumber/cucumber-junit
+    testImplementation group: 'io.cucumber', name: 'cucumber-junit', version: '7.18.1'
+
+}
+
+test {
+    useJUnitPlatform()
+}
