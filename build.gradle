@@ -37,6 +37,12 @@ dependencies {
     // https://mvnrepository.com/artifact/io.cucumber/cucumber-junit
     testImplementation group: 'io.cucumber', name: 'cucumber-junit', version: '7.18.1'
 
+    // webdrivermanager
+    // https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager
+    implementation 'io.github.bonigarcia:webdrivermanager:5.9.2'
+
+
+
 }
 
 test {
