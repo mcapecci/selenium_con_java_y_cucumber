@@ -10,6 +10,12 @@ repositories {
 }
 
 dependencies {
+    /*
+    * Definimos como:
+    * implementation --> la librería actúa sobre el directorio src/main
+    * testImplementation --> la librería actúa sobre el directorio src/test
+     */
+
     // JUnit viene por defecto en el proyecto java
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
 
